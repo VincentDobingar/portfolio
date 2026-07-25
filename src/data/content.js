@@ -1,5 +1,7 @@
 export const profile = {
   name: 'Vincent Dobingar Guiryambaye',
+  photoUrl: '/photo-vincent.jpg',
+  primaryTitle: 'Développeur Full-Stack & Data Analyst',
   titles: [
     'Ingénieur IN, VAS & MFS',
     'Consultant en Solutions Digitales',
@@ -74,6 +76,15 @@ export const dataProjects = [
 ]
 
 export const webProjects = [
+  {
+    title: 'DBS Africa — Digital Business Services',
+    role: 'Fondateur & Architecte Technique',
+    period: '2017 — Présent',
+    description:
+      "Site vitrine et plateforme institutionnelle de mon propre cabinet de conseil. « Solutions Digitales. Intelligence des Données. Croissance des Entreprises. » DBS accompagne entreprises, institutions et organisations dans leur transformation digitale via des solutions web, data analytics, business intelligence et gestion de projets. Frontend React/Vite avec Tailwind CSS et Framer Motion, contenu bilingue FR/EN (i18next). Backend Node.js/Express avec MySQL, authentification JWT, gestion des rôles admin, modules projets, blog, devis et contact.",
+    tags: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL', 'JWT', 'i18n'],
+    url: 'https://dbs-africa.org',
+  },
   {
     title: 'SNRC — Société Nationale de Recouvrement des Créances du Tchad',
     role: 'Consultant Freelance — Développeur / Architecte Technique',
@@ -211,7 +222,7 @@ export const certifications = [
   { name: 'Project Management Professional (PMP)', org: 'PMI', year: '2025', status: 'Obtenu' },
   { name: 'MEAL Fundamentals', org: 'DisasterReady', year: '2025', status: 'Obtenu' },
   { name: 'Data Analysis with Excel, SPSS and Power BI', org: 'CCL — Maroc', year: '2024', status: 'Obtenu' },
-  { name: 'Full Stack Web Development (React, JavaScript, Node.js, Web3)', org: 'Udemy', year: '2025 — 2026', status: 'En cours' },
+  { name: 'Full Stack Web Development (React, JavaScript, Node.js, Web3)', org: 'Udemy', year: '2025 — 2026', status: 'Obtenu' },
   { name: 'AI Expertise (ChatGPT, Claude, Midjourney, Jasper, Stable Diffusion, DeepSeek)', org: 'Cousiv', year: '2025 — 2026', status: 'Obtenu' },
 ]
 
