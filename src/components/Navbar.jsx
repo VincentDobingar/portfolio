@@ -1,17 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Menu, X, Download } from 'lucide-react'
-import { profile } from '../data/content.js'
-
-const links = [
-  { href: '#about', label: 'À propos' },
-  { href: '#skills', label: 'Compétences' },
-  { href: '#experience', label: 'Expérience' },
-  { href: '#projects', label: 'Projets' },
-  { href: '#education', label: 'Formation' },
-  { href: '#contact', label: 'Contact' },
-]
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Navbar() {
+  const { t, lang, setLang, content } = useLanguage()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -20,6 +12,15 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const links = [
+    { href: '#about', label: t('nav.about') },
+    { href: '#skills', label: t('nav.skills') },
+    { href: '#experience', label: t('nav.experience') },
+    { href: '#projects', label: t('nav.projects') },
+    { href: '#education', label: t('nav.education') },
+    { href: '#contact', label: t('nav.contact') },
+  ]
 
   return (
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
@@ -36,11 +37,20 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a className="btn btn-small btn-primary nav-cv" href={profile.cvUrl} download>
-          <Download size={16} /> CV
+        <div className="lang-switch">
+          <button className={lang === 'fr' ? 'active' : ''} onClick={() => setLang('fr')}>
+            FR
+          </button>
+          <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>
+            EN
+          </button>
+        </div>
+
+        <a className="btn btn-small btn-primary nav-cv" href={content.profile.cvUrl} download>
+          <Download size={16} /> {t('nav.cv')}
         </a>
 
-        <button className="nav-toggle" aria-label="Ouvrir le menu" onClick={() => setOpen((v) => !v)}>
+        <button className="nav-toggle" aria-label={t('nav.openMenu')} onClick={() => setOpen((v) => !v)}>
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -52,8 +62,16 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a className="btn btn-primary" href={profile.cvUrl} download onClick={() => setOpen(false)}>
-            <Download size={16} /> Télécharger le CV
+          <div className="lang-switch lang-switch-mobile">
+            <button className={lang === 'fr' ? 'active' : ''} onClick={() => setLang('fr')}>
+              Français
+            </button>
+            <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>
+              English
+            </button>
+          </div>
+          <a className="btn btn-primary" href={content.profile.cvUrl} download onClick={() => setOpen(false)}>
+            <Download size={16} /> {t('nav.downloadCv')}
           </a>
         </nav>
       )}

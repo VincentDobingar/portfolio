@@ -1,17 +1,18 @@
 import { ExternalLink } from 'lucide-react'
 import Reveal from './Reveal.jsx'
-import { dataProjects, webProjects } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Projects() {
+  const { t, content } = useLanguage()
+  const { dataProjects, webProjects } = content
+
   return (
     <section id="projects" className="section section-alt">
       <div className="container">
         <Reveal>
-          <p className="section-eyebrow">Projets</p>
-          <h2 className="section-title">Projets Data Analyse</h2>
-          <p className="section-subtitle">
-            Réalisés lors de ma formation en data analyse — SQL, Python et R.
-          </p>
+          <p className="section-eyebrow">{t('projects.eyebrow')}</p>
+          <h2 className="section-title">{t('projects.dataTitle')}</h2>
+          <p className="section-subtitle">{t('projects.dataSubtitle')}</p>
         </Reveal>
 
         <div className="grid grid-3">
@@ -31,10 +32,8 @@ export default function Projects() {
         </div>
 
         <Reveal delay={100} className="projects-web-heading">
-          <h2 className="section-title">Projets Web &amp; Solutions Digitales</h2>
-          <p className="section-subtitle">
-            Plateformes conçues et développées en tant que consultant freelance et développeur full-stack.
-          </p>
+          <h2 className="section-title">{t('projects.webTitle')}</h2>
+          <p className="section-subtitle">{t('projects.webSubtitle')}</p>
         </Reveal>
 
         <div className="web-projects">
@@ -50,15 +49,15 @@ export default function Projects() {
                   </div>
                   {p.url && (
                     <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-small btn-ghost">
-                      Visiter <ExternalLink size={14} />
+                      {t('projects.visit')} <ExternalLink size={14} />
                     </a>
                   )}
                 </div>
                 <p className="web-project-desc">{p.description}</p>
                 <ul className="tag-list">
-                  {p.tags.map((t) => (
-                    <li key={t} className="tag tag-muted">
-                      {t}
+                  {p.tags.map((tag) => (
+                    <li key={tag} className="tag tag-muted">
+                      {tag}
                     </li>
                   ))}
                 </ul>

@@ -1,13 +1,16 @@
 import Reveal from './Reveal.jsx'
-import { skills, languages, tools } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Skills() {
+  const { t, content } = useLanguage()
+  const { skills, languages, tools } = content
+
   return (
     <section id="skills" className="section section-alt">
       <div className="container">
         <Reveal>
-          <p className="section-eyebrow">Compétences</p>
-          <h2 className="section-title">Ce que je maîtrise</h2>
+          <p className="section-eyebrow">{t('skills.eyebrow')}</p>
+          <h2 className="section-title">{t('skills.title')}</h2>
         </Reveal>
 
         <div className="grid grid-3 skills-grid">
@@ -29,11 +32,11 @@ export default function Skills() {
 
         <Reveal delay={120}>
           <div className="tools-block">
-            <h3>Outils &amp; technologies</h3>
+            <h3>{t('skills.toolsTitle')}</h3>
             <ul className="tag-list">
-              {tools.map((t) => (
-                <li key={t} className="tag tag-muted">
-                  {t}
+              {tools.map((tool) => (
+                <li key={tool} className="tag tag-muted">
+                  {tool}
                 </li>
               ))}
             </ul>
@@ -42,7 +45,7 @@ export default function Skills() {
 
         <Reveal delay={160}>
           <div className="languages-block">
-            <h3>Langues</h3>
+            <h3>{t('skills.languagesTitle')}</h3>
             <div className="languages-row">
               {languages.map((l) => (
                 <div key={l.name} className="language-pill">

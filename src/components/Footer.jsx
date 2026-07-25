@@ -1,11 +1,15 @@
-import { profile } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Footer() {
+  const { t, content } = useLanguage()
+
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <p>© {new Date().getFullYear()} {profile.name}. Tous droits réservés.</p>
-        <a href="#top">Retour en haut ↑</a>
+        <p>
+          © {new Date().getFullYear()} {content.profile.name}. {t('footer.rights')}
+        </p>
+        <a href="#top">{t('footer.backToTop')}</a>
       </div>
     </footer>
   )

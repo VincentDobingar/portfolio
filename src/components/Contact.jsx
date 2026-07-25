@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react'
 import Reveal from './Reveal.jsx'
-import { profile } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 // Créez un formulaire gratuit sur https://formspree.io et remplacez l'ID ci-dessous.
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/VOTRE_ID_FORMSPREE'
 
 export default function Contact() {
+  const { t, content } = useLanguage()
+  const { profile } = content
   const [status, setStatus] = useState('idle')
 
   async function handleSubmit(e) {
@@ -35,11 +37,9 @@ export default function Contact() {
     <section id="contact" className="section section-alt">
       <div className="container">
         <Reveal>
-          <p className="section-eyebrow">Contact</p>
-          <h2 className="section-title">Discutons de votre projet</h2>
-          <p className="section-subtitle">
-            Disponible pour des missions freelance, des collaborations techniques ou des postes en solutions digitales et data.
-          </p>
+          <p className="section-eyebrow">{t('contact.eyebrow')}</p>
+          <h2 className="section-title">{t('contact.title')}</h2>
+          <p className="section-subtitle">{t('contact.subtitle')}</p>
         </Reveal>
 
         <div className="contact-grid">
@@ -66,24 +66,24 @@ export default function Contact() {
           <Reveal delay={120}>
             <form className="card contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
-                <label htmlFor="name">Nom</label>
-                <input id="name" name="name" type="text" required placeholder="Votre nom" />
+                <label htmlFor="name">{t('contact.formName')}</label>
+                <input id="name" name="name" type="text" required placeholder={t('contact.formNamePlaceholder')} />
               </div>
               <div className="form-row">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" required placeholder="vous@exemple.com" />
+                <label htmlFor="email">{t('contact.formEmail')}</label>
+                <input id="email" name="email" type="email" required placeholder={t('contact.formEmailPlaceholder')} />
               </div>
               <div className="form-row">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows={5} required placeholder="Parlez-moi de votre projet…" />
+                <label htmlFor="message">{t('contact.formMessage')}</label>
+                <textarea id="message" name="message" rows={5} required placeholder={t('contact.formMessagePlaceholder')} />
               </div>
               <button className="btn btn-primary" type="submit" disabled={status === 'sending'}>
-                {status === 'sending' ? 'Envoi…' : 'Envoyer le message'} <Send size={16} />
+                {status === 'sending' ? t('contact.sending') : t('contact.send')} <Send size={16} />
               </button>
-              {status === 'success' && <p className="form-status form-success">Message envoyé, merci !</p>}
+              {status === 'success' && <p className="form-status form-success">{t('contact.success')}</p>}
               {status === 'error' && (
                 <p className="form-status form-error">
-                  Une erreur est survenue — écrivez-moi directement à {profile.email}.
+                  {t('contact.error')} {profile.email}.
                 </p>
               )}
             </form>

@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { ArrowRight, Download, MapPin, Github, Linkedin } from 'lucide-react'
-import { profile } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Hero() {
+  const { t, content } = useLanguage()
+  const { profile } = content
   const [imgError, setImgError] = useState(false)
   const initials = profile.name
     .split(' ')
@@ -15,7 +17,7 @@ export default function Hero() {
       <div className="hero-glow" aria-hidden="true" />
       <div className="container hero-inner">
         <div className="hero-text">
-          <p className="eyebrow">Portfolio professionnel</p>
+          <p className="eyebrow">{t('hero.eyebrow')}</p>
           <h1>{profile.name}</h1>
           <p className="hero-role">{profile.primaryTitle}</p>
           <p className="hero-titles">{profile.titles.join(' · ')}</p>
@@ -29,25 +31,25 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">
-              Voir mes projets <ArrowRight size={16} />
+              {t('hero.ctaProjects')} <ArrowRight size={16} />
             </a>
             <a href="#contact" className="btn btn-ghost">
-              Me contacter
+              {t('hero.ctaContact')}
             </a>
           </div>
 
           <div className="hero-social">
             <a href={profile.github} target="_blank" rel="noreferrer">
               <Github size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
-              GitHub
+              {t('hero.github')}
             </a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer">
               <Linkedin size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
-              LinkedIn
+              {t('hero.linkedin')}
             </a>
             <a href={profile.cvUrl} download>
               <Download size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
-              Télécharger le CV
+              {t('hero.downloadCv')}
             </a>
           </div>
         </div>

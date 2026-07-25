@@ -1,17 +1,19 @@
 import Reveal from './Reveal.jsx'
-import { experience } from '../data/content.js'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Experience() {
+  const { t, content } = useLanguage()
+
   return (
     <section id="experience" className="section">
       <div className="container">
         <Reveal>
-          <p className="section-eyebrow">Parcours</p>
-          <h2 className="section-title">Expérience professionnelle</h2>
+          <p className="section-eyebrow">{t('experience.eyebrow')}</p>
+          <h2 className="section-title">{t('experience.title')}</h2>
         </Reveal>
 
         <div className="timeline">
-          {experience.map((e, i) => (
+          {content.experience.map((e, i) => (
             <Reveal key={e.role + e.period} delay={i * 60} className="timeline-item">
               <div className="timeline-dot" />
               <div className="timeline-content">
