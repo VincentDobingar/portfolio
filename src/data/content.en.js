@@ -74,16 +74,16 @@ export const dataProjects = [
     stack: 'Python / Power BI',
     description:
       'Humanitarian data analysis on population displacement and food insecurity across Mali, Burkina Faso and Niger (2015-2024). Automated data pipeline pulling from UNHCR, IDMC, FAOSTAT, ACLED and IPC sources, a bilingual FR/EN dashboard and an interactive Power BI report for donors and humanitarian organizations.',
-    url: 'https://github.com/VincentDobingar/Sahel_Deplacement_UN',
-    cta: 'View code',
+    url: 'https://sahel-deplacement-un-r6mf.vercel.app',
+    cta: 'View dashboard',
   },
   {
     title: 'Cameroon Healthcare Consultations Analysis',
     stack: 'R / Shiny',
     description:
       "Analysis of 10,068 health consultations across Cameroon's 10 regions (2025): medication stockouts (18% on average), health insurance coverage, treatment costs and disparities in access to care. R-based data cleaning pipeline (tidyverse) and an interactive Shiny dashboard for decision support.",
-    url: 'https://github.com/VincentDobingar/SanteCameroun',
-    cta: 'View code',
+    url: 'https://santestatic.vercel.app',
+    cta: 'View report',
   },
   {
     title: 'DataLendo-RH',
