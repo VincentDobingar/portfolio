@@ -89,9 +89,9 @@ export const dataProjects = [
     title: 'DataLendo-RH',
     stack: 'SQL',
     description:
-      "Analyse de données RH en SQL : requêtes, indicateurs et exploration de données réalisées durant la formation en analyse de données.",
-    url: 'https://github.com/VincentDobingar/DataLendo-RH',
-    cta: 'Voir le code',
+      "Analyse de données RH en SQL : effectifs, turnover et performance sur 1 500 employés et 18 000 évaluations trimestrielles. Requêtes, indicateurs et dashboard interactif réalisés durant la formation en analyse de données.",
+    url: 'https://site-taupe-nine-66.vercel.app',
+    cta: 'Voir le dashboard',
   },
   {
     title: 'AfriMarket Projects',
