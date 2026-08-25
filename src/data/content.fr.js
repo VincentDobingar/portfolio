@@ -1,61 +1,90 @@
 export const profile = {
   name: 'Vincent Dobingar Guiryambaye',
   photoUrl: '/photo-vincent.jpg',
-  primaryTitle: 'Développeur Full-Stack & Data Analyst',
+  primaryTitle: 'Expert Mobile Money, DFS & Data Analyst',
   titles: [
-    'Ingénieur IN, VAS & MFS',
-    'Consultant en Solutions Digitales',
+    'Revenue Assurance & Réconciliation de Données',
+    'Consultant PMP — Solutions Digitales',
     'Développeur Full-Stack',
-    'Data Analyst',
-    'Chef de Projet',
   ],
   tagline:
-    "Je conçois, développe et déploie des plateformes digitales institutionnelles et business — de l'analyse du besoin à la mise en production.",
+    "Plus de 10 ans d'expérience entre télécommunications, services financiers digitaux (Mobile Money, Airtel Money) et analyse de données financières — je fiabilise les données transactionnelles et je conçois les plateformes qui les font vivre.",
   email: 'guiryambaye.vincent@gmail.com',
   phone: '+257 62 500 305',
-  location: 'Bujumbura, Burundi',
+  location: 'Bujumbura, Burundi — Ouvert à la relocalisation (Tchad & Afrique)',
   linkedin: 'https://linkedin.com/in/dobingarvincent',
   github: 'https://github.com/VincentDobingar',
-  cvUrl: '/CV_Vincent_Dobingar.pdf',
+  cvUrl: '/CV_Vincent_Dobingar_MobileMoney_DFS.pdf',
   summary:
-    "Ingénieur IN, VAS & MFS, développeur full-stack et consultant en solutions digitales, avec une expérience dans la conception, l'architecture, le développement et le déploiement de plateformes institutionnelles et business. Solides compétences en analyse fonctionnelle, rédaction de cahiers des charges, architecture backend, API REST, bases de données, sécurité applicative, tableaux de bord, gestion des utilisateurs, contrôle qualité et gestion de projets digitaux. Capable de produire des livrables techniques structurés, de travailler à distance avec des équipes pluridisciplinaires et d'accompagner tout le cycle de vie d'un projet digital, de l'analyse des besoins à la validation technique.",
+    "Professionnel IT et data avec plus de 10 ans d'expérience dans les télécommunications et les services financiers digitaux (Mobile Money, Airtel Money, DFS), ainsi qu'en analyse de données financières et Revenue Assurance (Millicom Tigo). Expertise confirmée en réconciliation de données transactionnelles (wallet, agents, marchands), suivi de KPI, tableaux de bord Power BI, conformité KYC/AML et gestion de projets certifiée PMP. En parallèle, je conçois et développe des plateformes web complètes — frontend, backend, API, bases de données, sécurité applicative — pour des institutions et PME au Tchad et en Afrique. Un profil hybride et opérationnel, capable de piloter un projet digital de bout en bout, de l'analyse du besoin au reporting orienté décision.",
 }
 
+export const cvOptions = [
+  {
+    key: 'dfs',
+    label: 'CV — Mobile Money & DFS',
+    description: 'Opérations IT, Mobile Money, Airtel Money, services financiers digitaux',
+    url: '/CV_Vincent_Dobingar_MobileMoney_DFS.pdf',
+  },
+  {
+    key: 'finance',
+    label: 'CV — Data Analyst & Finance',
+    description: 'Reporting financier, réconciliation de données, Power BI',
+    url: '/CV_Vincent_Dobingar_DataAnalyst_Finance.pdf',
+  },
+]
+
 export const highlights = [
-  { icon: 'code', label: 'Architectures full-stack complètes conçues (frontend, backend, BDD, admin)' },
-  { icon: 'database', label: 'Analyse, reporting et automatisation de données pour la prise de décision' },
-  { icon: 'shield', label: 'Sécurité applicative : authentification, rôles, API, sessions' },
-  { icon: 'users', label: 'Coordination de projets digitaux avec équipes pluridisciplinaires à distance' },
+  { icon: 'database', label: 'Réconciliation de données transactionnelles & Revenue Assurance (Mobile Money, télécom)' },
+  { icon: 'shield', label: 'Conformité KYC/AML et sécurité des systèmes transactionnels critiques' },
+  { icon: 'users', label: 'Gestion de projet certifiée PMP, coordination multi-pays et multiculturelle' },
+  { icon: 'code', label: 'Architectures full-stack complètes pour plateformes institutionnelles et PME' },
 ]
 
 export const skills = [
   {
-    category: 'Frontend',
-    items: ['React', 'JavaScript', 'WordPress', 'Design responsive', 'UX/UI'],
+    category: 'Mobile Money / DFS',
+    items: ['Wallet', 'USSD', 'Réseau agents & marchands', 'KYC/AML', 'Interopérabilité', 'Switch de paiement'],
   },
   {
-    category: 'Backend & API',
-    items: ['Node.js', 'Express', 'PHP', 'API REST', 'GraphQL'],
+    category: 'Finance & Revenue Assurance',
+    items: ['Réconciliation de données', 'Rapprochement bancaire', "Détection d'anomalies", 'Contrôle de cohérence', 'Reporting financier'],
   },
   {
-    category: 'Bases de données',
-    items: ['PostgreSQL', 'MySQL', 'SQL Server'],
-  },
-  {
-    category: 'Data & BI',
-    items: ['Power BI', 'Excel', 'SPSS', 'R', 'Python', 'Reporting & KPIs'],
-  },
-  {
-    category: 'Sécurité applicative',
-    items: ['Authentification', 'Gestion des rôles', 'Sessions', 'CORS', 'Sécurité API'],
+    category: 'Business Intelligence & Data',
+    items: ['Power BI', 'DAX', 'Power Query', 'Excel avancé (VBA)', 'SQL', 'Python', 'R'],
   },
   {
     category: 'Gestion de projet',
-    items: ['PMP', 'MEAL', 'Planification', 'Coordination à distance', 'Reporting'],
+    items: ['PMP', 'Agile', 'Analyse fonctionnelle (MOA)', 'Gouvernance IT', 'Coordination à distance'],
+  },
+  {
+    category: 'Développement Full-Stack',
+    items: ['React', 'Node.js', 'Express', 'API REST', 'GraphQL', 'WordPress'],
+  },
+  {
+    category: 'Bases de données & Sécurité',
+    items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Authentification', 'Rôles & sessions', 'CORS'],
   },
 ]
 
 export const dataProjects = [
+  {
+    title: 'Déplacement de Population & Sécurité Alimentaire au Sahel',
+    stack: 'Python / Power BI',
+    description:
+      "Analyse de données humanitaires sur les déplacements de population et la sécurité alimentaire au Mali, Burkina Faso et Niger (2015-2024). Pipeline de collecte automatisée à partir de sources UNHCR, IDMC, FAOSTAT, ACLED et IPC, dashboard bilingue FR/EN et rapport Power BI interactif pour bailleurs et organisations humanitaires.",
+    url: 'https://github.com/VincentDobingar/Sahel_Deplacement_UN',
+    cta: 'Voir le code',
+  },
+  {
+    title: 'Analyse des Consultations de Santé au Cameroun',
+    stack: 'R / Shiny',
+    description:
+      "Analyse de 10 068 consultations de santé réparties sur les 10 régions du Cameroun (2025) : ruptures de stock de médicaments (18 % en moyenne), couverture d'assurance santé, coûts de traitement et disparités d'accès aux soins. Pipeline de nettoyage de données en R (tidyverse) et dashboard Shiny interactif pour l'aide à la décision.",
+    url: 'https://github.com/VincentDobingar/SanteCameroun',
+    cta: 'Voir le code',
+  },
   {
     title: 'DataLendo-RH',
     stack: 'SQL',
@@ -91,6 +120,24 @@ export const webProjects = [
       "Site vitrine et plateforme institutionnelle de mon propre cabinet de conseil. « Solutions Digitales. Intelligence des Données. Croissance des Entreprises. » DBS accompagne entreprises, institutions et organisations dans leur transformation digitale via des solutions web, data analytics, business intelligence et gestion de projets. Frontend React/Vite avec Tailwind CSS et Framer Motion, contenu bilingue FR/EN (i18next). Backend Node.js/Express avec MySQL, authentification JWT, gestion des rôles admin, modules projets, blog, devis et contact.",
     tags: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL', 'JWT', 'i18n'],
     url: 'https://dbs-africa.org',
+  },
+  {
+    title: 'KYC Management System',
+    role: 'Concepteur & Développeur Full-Stack',
+    period: '2026',
+    description:
+      "Plateforme de conformité KYC centralisant les données d'abonnés des trois opérateurs mobiles du Burundi pour la gestion de dossiers, l'évaluation des risques et les audits réglementaires. Réconciliation croisée entre opérateurs, scoring de risque et détection d'anomalies basés sur des règles, alertes de conformité en temps réel, contrôle d'accès par rôle (Admin, Analyste, Auditeur) et traçabilité complète des actions. Interface bilingue FR/EN.",
+    tags: ['React', 'Node.js', 'Express', 'SQL Server', 'JWT', 'Socket.IO', 'KYC/AML'],
+    url: 'https://github.com/VincentDobingar/kyc_Management_Project',
+  },
+  {
+    title: 'EduManage Africa',
+    role: 'Concepteur & Développeur Full-Stack',
+    period: '2026',
+    description:
+      "Plateforme SaaS multi-établissements pour la gestion des institutions éducatives en Afrique : inscriptions, gestion du personnel, curriculum, emplois du temps, notes, présence et discipline, ainsi que gestion financière avec paiement Mobile Money intégré. Architecture multi-tenant sécurisée (Row-Level Security) en monorepo Turborepo.",
+    tags: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Redis', 'Mobile Money'],
+    url: 'https://github.com/VincentDobingar/dbs_education_project',
   },
   {
     title: 'SNRC — Société Nationale de Recouvrement des Créances du Tchad',
@@ -137,17 +184,37 @@ export const webProjects = [
     tags: ['React', 'Material UI', 'GraphQL', 'PostgreSQL'],
     url: 'https://www.2bemalko.com',
   },
+  {
+    title: 'Plateforme de Déclaration Anti-Discrimination',
+    role: 'Concepteur & Développeur Full-Stack',
+    period: '2026',
+    description:
+      "Application web pour le signalement et le suivi de déclarations liées à des situations de discrimination. Frontend React, backend Node.js avec API dédiée.",
+    tags: ['React', 'Node.js', 'API REST'],
+    url: 'https://github.com/VincentDobingar/antidiscrimination',
+  },
 ]
 
 export const experience = [
   {
-    role: 'Consultant Senior IN, VAS & MFS / Data Analyst & Chef de Projet',
-    org: 'Télécommunications et services digitaux',
+    role: 'Consultant Senior IN, VAS & MFS (Mobile Financial Services) / Data Analyst & Chef de Projet',
+    org: 'Télécommunications et Services Financiers Digitaux, Bujumbura, Burundi',
     period: 'Juillet 2023 — Présent',
     points: [
-      "Analyse et réconciliation de fichiers collectés auprès d'opérateurs mobiles.",
-      "Automatisation de rapports, structuration de données, suivi d'indicateurs.",
-      "Coordination technique, suivi des anomalies et amélioration continue des processus.",
+      "Supervision des activités VAS/MFS (Mobile Money) : wallet, USSD, réseau d'agents et marchands, KYC/AML, interopérabilité.",
+      "Réconciliation de fichiers d'opérateurs de réseaux mobiles (MNO) — rapprochement de données multi-sources, logique équivalente au rapprochement bancaire.",
+      "Conception de mesures DAX pour tableaux de bord Power BI, automatisation de rapports Excel/VBA, suivi de KPI et reporting de management.",
+      "Coordination d'équipes techniques et métiers, gestion des anomalies et incidents, conformité réglementaire des systèmes transactionnels critiques.",
+    ],
+  },
+  {
+    role: 'Consultant Indépendant — Développement Digital & Analyse Fonctionnelle (MOA)',
+    org: 'Divers clients, Tchad (à distance) — SNRC, Eden Business Center, Harvest Center, CDO Tchad',
+    period: '2023 — Présent',
+    points: [
+      "Conception de plateformes web complètes (frontend, backend, API REST, bases de données, interfaces d'administration) pour des institutions et PME.",
+      "Recueil des besoins, rédaction de cahiers des charges et spécifications fonctionnelles et techniques, gestion de projet Agile (sprints, backlog).",
+      "Sécurisation applicative (authentification, CORS, endpoints protégés) et support technique en production.",
     ],
   },
   {
@@ -192,11 +259,11 @@ export const experience = [
   },
   {
     role: 'Fondateur et Directeur Exécutif',
-    org: 'Digital Business Services — Tchad',
+    org: 'DBS Africa — Digital Business Services, Tchad',
     period: '2017 — Présent',
     points: [
-      "Création et direction d'un cabinet de conseil en solutions data pour PME.",
-      'Conception de systèmes de transformation digitale et de suivi.',
+      "Création et direction d'un cabinet de conseil en solutions digitales et data pour PME.",
+      'Conception de systèmes de transformation digitale et de suivi de la performance organisationnelle.',
       'Développement de cadres de suivi de la performance organisationnelle.',
     ],
   },
@@ -205,9 +272,9 @@ export const experience = [
     org: 'Millicom Tigo — Tchad',
     period: '2012 — 2017',
     points: [
-      'Développement de systèmes de reporting et tableaux de bord SQL.',
-      "Automatisation de l'analyse de données et de la détection d'anomalies.",
-      'Appui au suivi de performance et à la maîtrise des risques.',
+      'Développement de systèmes de reporting et tableaux de bord SQL pour le suivi des revenus et de la performance.',
+      "Automatisation de l'analyse de données et détection d'anomalies (Revenue Assurance) — identification d'écarts financiers et de pertes de revenus.",
+      'Appui au suivi de la performance financière et à la gestion des risques opérationnels.',
     ],
   },
 ]
@@ -228,18 +295,20 @@ export const education = [
 export const certifications = [
   { name: 'Project Management Professional (PMP)', org: 'PMI', year: '2025', status: 'done' },
   { name: 'MEAL Fundamentals', org: 'DisasterReady', year: '2025', status: 'done' },
-  { name: 'Data Analysis with Excel, SPSS and Power BI', org: 'CCL — Maroc', year: '2024', status: 'done' },
+  { name: 'Analyse de données (Excel, SPSS, Power BI)', org: 'CCL — Maroc', year: '2024', status: 'done' },
+  { name: 'Analyse de données avec Claude (Excel, Power BI, Python et R)', org: 'Eureca', year: '2026', status: 'done' },
   { name: 'Full Stack Web Development (React, JavaScript, Node.js, Web3)', org: 'Udemy', year: '2025 — 2026', status: 'done' },
-  { name: 'AI Expertise (ChatGPT, Claude, Midjourney, Jasper, Stable Diffusion, DeepSeek)', org: 'Cousiv', year: '2025 — 2026', status: 'done' },
+  { name: 'IA appliquée (ChatGPT, Claude, Midjourney, Jasper, Stable Diffusion, DeepSeek)', org: 'Cousiv', year: '2025 — 2026', status: 'done' },
 ]
 
 export const languages = [
   { name: 'Français', level: 'Excellent' },
-  { name: 'Anglais', level: 'Bon' },
+  { name: 'Anglais', level: 'Courant' },
   { name: 'Arabe tchadien / autres langues locales', level: 'Bon' },
 ]
 
 export const tools = [
-  'React', 'JavaScript', 'Node.js', 'Express', 'WordPress', 'SQL Server', 'MySQL',
-  'PostgreSQL', 'API REST', 'Git', 'cPanel', 'Passenger', 'Power BI', 'Excel',
+  'Power BI', 'DAX', 'Power Query', 'Excel', 'VBA', 'SQL Server', 'MySQL', 'PostgreSQL',
+  'Python', 'R', 'React', 'Node.js', 'Express', 'API REST', 'GraphQL', 'Git', 'JIRA',
+  'cPanel', 'Passenger', 'PMP',
 ]

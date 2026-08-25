@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 import Reveal from './Reveal.jsx'
 import { useLanguage } from '../i18n/LanguageContext.jsx'
 
@@ -47,10 +47,16 @@ export default function Projects() {
                       {p.role} · <span>{p.period}</span>
                     </p>
                   </div>
-                  {p.url && (
+                  {p.url && p.url.includes('github.com') ? (
                     <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-small btn-ghost">
-                      {t('projects.visit')} <ExternalLink size={14} />
+                      {t('projects.code')} <Github size={14} />
                     </a>
+                  ) : (
+                    p.url && (
+                      <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-small btn-ghost">
+                        {t('projects.visit')} <ExternalLink size={14} />
+                      </a>
+                    )
                   )}
                 </div>
                 <p className="web-project-desc">{p.description}</p>

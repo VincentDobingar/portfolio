@@ -40,6 +40,7 @@ export const ui = {
       webTitle: 'Projets Web & Solutions Digitales',
       webSubtitle: 'Plateformes conçues et développées en tant que consultant freelance et développeur full-stack.',
       visit: 'Visiter',
+      code: 'Voir sur GitHub',
     },
     education: {
       eyebrow: 'Formation',
@@ -110,6 +111,7 @@ export const ui = {
       webTitle: 'Web & Digital Solutions Projects',
       webSubtitle: 'Platforms designed and developed as a freelance consultant and full-stack developer.',
       visit: 'Visit',
+      code: 'View on GitHub',
     },
     education: {
       eyebrow: 'Education',

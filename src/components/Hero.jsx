@@ -4,7 +4,7 @@ import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 export default function Hero() {
   const { t, content } = useLanguage()
-  const { profile } = content
+  const { profile, cvOptions } = content
   const [imgError, setImgError] = useState(false)
   const initials = profile.name
     .split(' ')
@@ -47,10 +47,12 @@ export default function Hero() {
               <Linkedin size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
               {t('hero.linkedin')}
             </a>
-            <a href={profile.cvUrl} download>
-              <Download size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
-              {t('hero.downloadCv')}
-            </a>
+            {cvOptions?.map((cv) => (
+              <a key={cv.key} href={cv.url} download title={cv.description}>
+                <Download size={16} style={{ verticalAlign: '-3px', marginRight: 6 }} />
+                {cv.label}
+              </a>
+            ))}
           </div>
         </div>
 
