@@ -131,13 +131,73 @@ export const webProjects = [
     url: 'https://github.com/VincentDobingar/kyc_Management_Project',
   },
   {
+    title: 'ITS-RAFM — Revenue Assurance & Fraud Management Platform',
+    role: 'Project Manager & Full-Stack Developer',
+    period: '2026',
+    description:
+      'Telecom intelligence platform for fraud detection and revenue assurance in Burundi, covering the Lumitel, Econet and Onatel operators, alongside the KYC system. Alarm dashboard and management, AI risk scoring, cross-operator revenue reconciliation, an investigation workspace (cases, assignment, notes, attachments), a CDR Explorer reading live voice, recharge, transfer and Mobile Money transaction records from Oracle, a fraud rule engine, Excel/CSV/PDF exports and a full audit trail. Delivered in phases, with bilingual FR/EN documentation and presentation.',
+    tags: ['React', 'Material UI', 'Node.js', 'Express', 'SQL Server', 'Oracle', 'Socket.IO', 'Revenue Assurance'],
+  },
+  {
+    title: 'SBC Call Data Integration — Voice CDRs',
+    role: 'Project Manager & Full-Stack Developer',
+    period: '2026',
+    description:
+      "Integration of SBC (Session Border Controller) voice CDRs into a telecom reporting tool in Burundi, replacing Excel extracts that hung on large volumes. Successful / failed call views, CSV export and asynchronous bulk export, on day-partitioned Oracle tables (over 1.3 billion rows, ~1.1M failed calls per day). Day-by-day query optimization: last 24 hours and 7 days load in under a second. Session-based sign-in, brute-force lockout, audit logging and HTTPS deployment as a Windows service. Project tracking and reporting to the Executive Committee.",
+    tags: ['Node.js', 'Express', 'Oracle', 'React', 'SQL Optimization', 'Telecom'],
+  },
+  {
     title: 'EduManage Africa',
     role: 'Designer & Full-Stack Developer',
     period: '2026',
     description:
       'A multi-tenant SaaS platform for managing educational institutions across Africa: enrollment, staff management, curriculum, scheduling, grading, attendance and discipline, plus financial management with integrated Mobile Money payments. Secure multi-tenant architecture (Row-Level Security) built as a Turborepo monorepo.',
     tags: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Redis', 'Mobile Money'],
-    url: 'https://github.com/VincentDobingar/dbs_education_project',
+    url: 'https://dbseducationproject.vercel.app',
+  },
+  {
+    title: 'CityMove — Taxi & Vehicle Rental Ecosystem',
+    role: 'Designer & Mobile Developer',
+    period: '2026',
+    description:
+      'Three native Android apps (Manager, Client, Driver) for a taxi and vehicle rental company, plus a web version (PWA) for iPhone. Ride booking, real-time driver GPS tracking, nearest-taxi sorting, fare calculation, fleet and rental contract management with due-date alerts, Mobile Money payment, PDF receipts and driver ratings. Phone sign-in (OTP), offline mode, tested Firestore security rules, and an interface in French, English, Swahili and Kirundi.',
+    tags: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Firestore', 'Google Maps', 'PWA', 'Mobile Money'],
+  },
+  {
+    title: 'ADN Santé Plus — Health Center Management',
+    role: 'Designer & Full-Stack Developer',
+    period: '2026',
+    description:
+      'Management system for Centre Djenandoum Naasson (CDN) and ADN Santé Plus, an HIV/AIDS care center in Moundou, Chad, providing free care to over 1,800 patients. Patient and appointment management with a calendar, secure authentication and email notifications, built from a specification written with the center.',
+    tags: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'JWT', 'Healthcare'],
+    url: 'https://github.com/VincentDobingar/ADN-Sant--Plus',
+  },
+  {
+    title: 'FN & Partners — Law Firm',
+    role: 'Designer & Full-Stack Developer',
+    period: '2026',
+    description:
+      "Bilingual FR/EN institutional website for a law and legal advisory firm in Chad: 22 SEO-optimized practice-area pages, blog, legal FAQ and online appointment booking with attachments. Multi-step request form stored in MySQL, staff back-office for triaging requests and an authenticated client portal. Technical SEO (sitemap, structured data, Open Graph) and security headers (CSP, HSTS).",
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MySQL', 'SEO', 'i18n'],
+    url: 'https://nf-partnerscom.vercel.app',
+  },
+  {
+    title: 'Eden Datawize — Data Training in Africa',
+    role: 'Designer & Full-Stack Developer',
+    period: '2026',
+    description:
+      "Bilingual FR/EN platform for a data skills training provider (data analysis, Power BI, SQL, Python, Data Science, AI) operating in Chad and Rwanda. Course catalog, sessions, enrollments, corporate quotes, learner portal and admin back-office. Statically generated (SSG) React/TypeScript frontend, Express API with Prisma, JWT and two-factor (2FA) authentication, and a multi-provider payment engine (PayPal, MTN MoMo, GIMACPAY, Paypack).",
+    tags: ['React', 'TypeScript', 'Express', 'Prisma', '2FA', 'Mobile Money', 'i18n'],
+    url: 'https://github.com/VincentDobingar/eden-datawize',
+  },
+  {
+    title: 'NDOF Consulting — Engineering Firm',
+    role: 'Designer & Full-Stack Developer',
+    period: '2026',
+    description:
+      "Showcase website and back-office for an engineering and works-supervision firm based in N'Djamena (feasibility studies, execution plans, tender documents, site supervision). Presents expertise and completed projects, with a secure admin interface to manage projects and images. React/Vite frontend on Vercel, Express API on Render, hosted MySQL database (Aiven), JWT authentication.",
+    tags: ['React', 'Vite', 'Node.js', 'Express', 'MySQL', 'JWT'],
+    url: 'https://ndof-consulting.vercel.app',
   },
   {
     title: 'SNRC — Société Nationale de Recouvrement des Créances du Tchad',
