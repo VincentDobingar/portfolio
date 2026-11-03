@@ -213,6 +213,12 @@ img {
   }
 }
 
+@media (max-width: 350px) {
+  .brand {
+    font-size: 0.88rem;
+  }
+}
+
 .lang-switch {
   display: flex;
   align-items: center;
@@ -818,8 +824,20 @@ img {
 
 @media (max-width: 780px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
+}
+
+.contact-grid > * {
+  min-width: 0;
+}
+
+.contact-row {
+  overflow-wrap: anywhere;
+}
+
+.contact-row svg {
+  flex-shrink: 0;
 }
 
 .contact-info {

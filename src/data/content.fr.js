@@ -14,7 +14,7 @@ export const profile = {
   location: 'Bujumbura, Burundi — Ouvert à la relocalisation (Tchad & Afrique)',
   linkedin: 'https://linkedin.com/in/dobingarvincent',
   github: 'https://github.com/VincentDobingar',
-  cvUrl: '/CV_Vincent_Dobingar_MobileMoney_DFS.pdf',
+  cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
   summary:
     "Professionnel IT et data avec plus de 10 ans d'expérience dans les télécommunications et les services financiers digitaux (Mobile Money, Airtel Money, DFS), ainsi qu'en analyse de données financières et Revenue Assurance (Millicom Tigo). Expertise confirmée en réconciliation de données transactionnelles (wallet, agents, marchands), suivi de KPI, tableaux de bord Power BI, conformité KYC/AML et gestion de projets certifiée PMP. En parallèle, je conçois et développe des plateformes web complètes — frontend, backend, API, bases de données, sécurité applicative — pour des institutions et PME au Tchad et en Afrique. Un profil hybride et opérationnel, capable de piloter un projet digital de bout en bout, de l'analyse du besoin au reporting orienté décision.",
 }
@@ -24,13 +24,13 @@ export const cvOptions = [
     key: 'dfs',
     label: 'CV — Mobile Money & DFS',
     description: 'Opérations IT, Mobile Money, Airtel Money, services financiers digitaux',
-    url: '/CV_Vincent_Dobingar_MobileMoney_DFS.pdf',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
   },
   {
     key: 'finance',
     label: 'CV — Data Analyst & Finance',
     description: 'Reporting financier, réconciliation de données, Power BI',
-    url: '/CV_Vincent_Dobingar_DataAnalyst_Finance.pdf',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_DataAnalyst_Finance.pdf',
   },
 ]
 
