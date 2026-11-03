@@ -1,14 +1,14 @@
 export const profile = {
   name: 'Guiryambaye Vincent DOBINGAR',
   photoUrl: '/photo-vincent.jpg',
-  primaryTitle: 'Mobile Money, DFS & Data Analyst Expert',
+  primaryTitle: 'Revenue Assurance, Fraud & Data — Mobile Money / DFS',
   titles: [
-    'Revenue Assurance & Data Reconciliation',
-    'PMP Consultant — Digital Solutions',
+    'Telecom Fraud Detection & Data Reconciliation',
+    'PMP-Certified Project Manager',
     'Full-Stack Developer',
   ],
   tagline:
-    "10+ years across telecommunications, digital financial services (Mobile Money, Airtel Money) and financial data analysis — I make transactional data trustworthy, and I build the platforms that run on it.",
+    "14 years in telecoms and digital financial services. I build the platforms that detect fraud, reconcile operator data and protect revenue — from Millicom Tigo in Chad to the Lumitel, Econet and Onatel operators in Burundi.",
   email: 'guiryambaye.vincent@gmail.com',
   phone: '+257 62 500 305',
   location: 'Bujumbura, Burundi — Open to relocation (Chad & Africa)',
@@ -16,14 +16,14 @@ export const profile = {
   github: 'https://github.com/VincentDobingar',
   cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS_EN.pdf',
   summary:
-    "IT and data professional with 10+ years of experience in telecommunications and digital financial services (Mobile Money, Airtel Money, DFS), as well as financial data analysis and Revenue Assurance (Millicom Tigo). Proven expertise in reconciling transactional data (wallet, agents, merchants), KPI tracking, Power BI dashboards, KYC/AML compliance and PMP-certified project management. In parallel, I design and build complete web platforms — frontend, backend, APIs, databases, application security — for institutions and SMEs across Chad and Africa. A hybrid, hands-on profile able to run a digital project end to end, from needs analysis to decision-oriented reporting.",
+    "Revenue Assurance, fraud and data specialist with 14 years of experience in telecommunications and Mobile Money. At Millicom Tigo (Chad) I built the SQL reporting and anomaly-detection systems for Revenue Assurance and interconnection. Today at NP Holding (Burundi) I lead and build the compliance and control platforms covering Lumitel, Econet and Onatel: a multi-operator KYC system, the ITS-RAFM fraud and revenue assurance platform, and voice CDR integration at billion-row scale. PMP-certified, I cover the whole chain: requirements, data (SQL Server, Oracle, Power BI), full-stack development (React, Node.js) and executive reporting.",
 }
 
 export const cvOptions = [
   {
     key: 'dfs',
     label: 'Resume — Mobile Money & DFS',
-    description: 'IT operations, Mobile Money, Airtel Money, digital financial services',
+    description: 'IT operations, Mobile Money, digital financial services, KYC/AML',
     url: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS_EN.pdf',
   },
   {
@@ -35,10 +35,10 @@ export const cvOptions = [
 ]
 
 export const highlights = [
-  { icon: 'database', label: 'Transactional data reconciliation & Revenue Assurance (Mobile Money, telecom)' },
-  { icon: 'shield', label: 'KYC/AML compliance and security of critical transactional systems' },
-  { icon: 'users', label: 'PMP-certified project management, multi-country and multicultural coordination' },
-  { icon: 'code', label: 'Complete full-stack architectures for institutional platforms and SMEs' },
+  { icon: 'database', label: 'Revenue Assurance & fraud detection: RAFM platform, voice CDRs across 1+ billion rows' },
+  { icon: 'shield', label: 'Multi-operator KYC/AML compliance (Lumitel, Econet, Onatel) and audit of transactional systems' },
+  { icon: 'users', label: 'PMP-certified project management, reporting to the Executive Committee' },
+  { icon: 'code', label: 'End-to-end full-stack platforms: React, Node.js, SQL Server, Oracle, PostgreSQL' },
 ]
 
 export const skills = [
@@ -257,14 +257,14 @@ export const webProjects = [
 
 export const experience = [
   {
-    role: 'Senior IN, VAS & MFS (Mobile Financial Services) Consultant / Data Analyst & Project Manager',
-    org: 'Telecommunications and Digital Financial Services, Bujumbura, Burundi',
+    role: 'Senior IN, VAS & MFS Consultant — Data Analyst & Project Manager (Revenue Assurance, Fraud, KYC)',
+    org: 'NP Holding — Telecommunications and Digital Financial Services, Bujumbura, Burundi',
     period: 'July 2023 — Present',
     points: [
-      'Oversaw VAS/MFS (Mobile Money) activities: wallet, USSD, agent and merchant network, KYC/AML, interoperability.',
-      'Reconciled mobile network operator (MNO) files — multi-source data matching, equivalent to bank reconciliation logic.',
-      'Designed DAX measures for Power BI dashboards, automated Excel/VBA reporting, tracked KPIs and supported management reporting.',
-      'Coordinated technical and business teams, managed anomalies and incidents, ensured regulatory compliance of critical transactional systems.',
+      'Designed and led the ITS-RAFM platform (Revenue Assurance & Fraud Management): alarms, risk scoring, cross-operator revenue reconciliation, investigation cases and executive reporting.',
+      'Built a KYC system centralizing Lumitel, Econet and Onatel subscribers: cross-operator reconciliation, risk scoring, compliance alerts and audit trail.',
+      'Integrated SBC voice CDRs (Oracle tables of 1+ billion rows, ~1.1M failed calls/day): successful/failed views and exports, cutting load times from minutes to under a second.',
+      'Oversaw VAS/MFS activities (wallet, USSD, agents and merchants, interoperability), reconciled operator files, built Power BI/DAX dashboards and reported to the Executive Committee.',
     ],
   },
   {

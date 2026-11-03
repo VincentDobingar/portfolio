@@ -1,14 +1,14 @@
 export const profile = {
   name: 'Guiryambaye Vincent DOBINGAR',
   photoUrl: '/photo-vincent.jpg',
-  primaryTitle: 'Expert Mobile Money, DFS & Data Analyst',
+  primaryTitle: 'Revenue Assurance, Fraude & Data — Mobile Money / DFS',
   titles: [
-    'Revenue Assurance & Réconciliation de Données',
-    'Consultant PMP — Solutions Digitales',
+    'Détection de fraude & Réconciliation de données télécom',
+    'Chef de projet certifié PMP',
     'Développeur Full-Stack',
   ],
   tagline:
-    "Plus de 10 ans d'expérience entre télécommunications, services financiers digitaux (Mobile Money, Airtel Money) et analyse de données financières — je fiabilise les données transactionnelles et je conçois les plateformes qui les font vivre.",
+    "14 ans dans les télécoms et les services financiers digitaux. Je conçois les plateformes qui détectent la fraude, réconcilient les données des opérateurs et sécurisent les revenus — de Millicom Tigo au Tchad aux opérateurs Lumitel, Econet et Onatel au Burundi.",
   email: 'guiryambaye.vincent@gmail.com',
   phone: '+257 62 500 305',
   location: 'Bujumbura, Burundi — Ouvert à la relocalisation (Tchad & Afrique)',
@@ -16,14 +16,14 @@ export const profile = {
   github: 'https://github.com/VincentDobingar',
   cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
   summary:
-    "Professionnel IT et data avec plus de 10 ans d'expérience dans les télécommunications et les services financiers digitaux (Mobile Money, Airtel Money, DFS), ainsi qu'en analyse de données financières et Revenue Assurance (Millicom Tigo). Expertise confirmée en réconciliation de données transactionnelles (wallet, agents, marchands), suivi de KPI, tableaux de bord Power BI, conformité KYC/AML et gestion de projets certifiée PMP. En parallèle, je conçois et développe des plateformes web complètes — frontend, backend, API, bases de données, sécurité applicative — pour des institutions et PME au Tchad et en Afrique. Un profil hybride et opérationnel, capable de piloter un projet digital de bout en bout, de l'analyse du besoin au reporting orienté décision.",
+    "Spécialiste Revenue Assurance, fraude et data avec 14 ans d'expérience dans les télécommunications et le Mobile Money. Chez Millicom Tigo (Tchad), j'ai bâti les systèmes de reporting SQL et de détection d'anomalies de la Revenue Assurance et de l'interconnexion. Aujourd'hui chez NP Holding (Burundi), je pilote et développe les plateformes de conformité et de contrôle couvrant Lumitel, Econet et Onatel : système KYC multi-opérateurs, plateforme ITS-RAFM de détection de fraude et d'assurance des revenus, intégration des CDR voix à l'échelle du milliard de lignes. Certifié PMP, je couvre toute la chaîne : analyse du besoin, données (SQL Server, Oracle, Power BI), développement full-stack (React, Node.js) et reporting à la direction.",
 }
 
 export const cvOptions = [
   {
     key: 'dfs',
     label: 'CV — Mobile Money & DFS',
-    description: 'Opérations IT, Mobile Money, Airtel Money, services financiers digitaux',
+    description: 'Opérations IT, Mobile Money, services financiers digitaux, KYC/AML',
     url: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
   },
   {
@@ -35,10 +35,10 @@ export const cvOptions = [
 ]
 
 export const highlights = [
-  { icon: 'database', label: 'Réconciliation de données transactionnelles & Revenue Assurance (Mobile Money, télécom)' },
-  { icon: 'shield', label: 'Conformité KYC/AML et sécurité des systèmes transactionnels critiques' },
-  { icon: 'users', label: 'Gestion de projet certifiée PMP, coordination multi-pays et multiculturelle' },
-  { icon: 'code', label: 'Architectures full-stack complètes pour plateformes institutionnelles et PME' },
+  { icon: 'database', label: 'Revenue Assurance & détection de fraude : plateforme RAFM, CDR voix sur plus d\'1 milliard de lignes' },
+  { icon: 'shield', label: 'Conformité KYC/AML multi-opérateurs (Lumitel, Econet, Onatel) et audit des systèmes transactionnels' },
+  { icon: 'users', label: 'Gestion de projet certifiée PMP, reporting au Comité de Direction' },
+  { icon: 'code', label: 'Plateformes full-stack de bout en bout : React, Node.js, SQL Server, Oracle, PostgreSQL' },
 ]
 
 export const skills = [
@@ -257,14 +257,14 @@ export const webProjects = [
 
 export const experience = [
   {
-    role: 'Consultant Senior IN, VAS & MFS (Mobile Financial Services) / Data Analyst & Chef de Projet',
-    org: 'Télécommunications et Services Financiers Digitaux, Bujumbura, Burundi',
+    role: 'Consultant Senior IN, VAS & MFS — Data Analyst & Chef de Projet (Revenue Assurance, Fraude, KYC)',
+    org: 'NP Holding — Télécommunications et Services Financiers Digitaux, Bujumbura, Burundi',
     period: 'Juillet 2023 — Présent',
     points: [
-      "Supervision des activités VAS/MFS (Mobile Money) : wallet, USSD, réseau d'agents et marchands, KYC/AML, interopérabilité.",
-      "Réconciliation de fichiers d'opérateurs de réseaux mobiles (MNO) — rapprochement de données multi-sources, logique équivalente au rapprochement bancaire.",
-      "Conception de mesures DAX pour tableaux de bord Power BI, automatisation de rapports Excel/VBA, suivi de KPI et reporting de management.",
-      "Coordination d'équipes techniques et métiers, gestion des anomalies et incidents, conformité réglementaire des systèmes transactionnels critiques.",
+      "Conception et pilotage de la plateforme ITS-RAFM (Revenue Assurance & Fraud Management) : alarmes, scoring de risque, réconciliation des revenus entre opérateurs, dossiers d'investigation et reporting exécutif.",
+      "Mise en place d'un système KYC centralisant les abonnés de Lumitel, Econet et Onatel : réconciliation croisée, scoring de risque, alertes de conformité et piste d'audit.",
+      "Intégration des CDR voix du SBC (tables Oracle de plus d'1 milliard de lignes, ~1,1 M d'appels échoués/jour) : vues réussis/échoués et exports, avec un affichage ramené de plusieurs minutes à moins d'une seconde.",
+      "Supervision des activités VAS/MFS (wallet, USSD, agents et marchands, interopérabilité), réconciliation des fichiers opérateurs, tableaux de bord Power BI/DAX et reporting au Comité de Direction.",
     ],
   },
   {
