@@ -14,7 +14,7 @@ export const profile = {
   location: 'Bujumbura, Burundi — Ouvert à la relocalisation (Tchad & Afrique)',
   linkedin: 'https://linkedin.com/in/dobingarvincent',
   github: 'https://github.com/VincentDobingar',
-  cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
+  cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_RevenueAssurance_Fraude.pdf',
   summary:
     "Spécialiste Revenue Assurance, fraude et data avec 14 ans d'expérience dans les télécommunications et le Mobile Money. Chez Millicom Tigo (Tchad), j'ai bâti les systèmes de reporting SQL et de détection d'anomalies de la Revenue Assurance et de l'interconnexion. Aujourd'hui chez NP Holding (Burundi), je pilote et développe les plateformes de conformité et de contrôle couvrant Lumitel, Econet et Onatel : système KYC multi-opérateurs, plateforme ITS-RAFM de détection de fraude et d'assurance des revenus, intégration des CDR voix à l'échelle du milliard de lignes. Certifié PMP, je couvre toute la chaîne : analyse du besoin, données (SQL Server, Oracle, Power BI), développement full-stack (React, Node.js) et reporting à la direction.",
 }
@@ -22,15 +22,15 @@ export const profile = {
 export const cvOptions = [
   {
     key: 'dfs',
-    label: 'CV — Mobile Money & DFS',
-    description: 'Opérations IT, Mobile Money, services financiers digitaux, KYC/AML',
-    url: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS.pdf',
+    label: 'CV — Revenue Assurance & Fraude',
+    description: 'Revenue Assurance, détection de fraude, KYC/AML, Mobile Money / DFS',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_RevenueAssurance_Fraude.pdf',
   },
   {
     key: 'finance',
-    label: 'CV — Data Analyst & Finance',
-    description: 'Reporting financier, réconciliation de données, Power BI',
-    url: '/CV_Guiryambaye_Vincent_DOBINGAR_DataAnalyst_Finance.pdf',
+    label: 'CV — Data Analyst & BI',
+    description: 'SQL, Power BI, Python, R — télécoms, finance et données humanitaires',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_DataAnalyst_BI.pdf',
   },
 ]
 
@@ -310,7 +310,7 @@ export const experience = [
   {
     role: 'Partenaire et Chef de Projet Technique',
     org: 'SALY SYSTEM — Startup de développement d\'applications digitales, Tchad',
-    period: '2021 — 2023',
+    period: 'Février 2021 — Juin 2023',
     points: [
       'Conception et mise en œuvre de systèmes de données et tableaux de bord.',
       'Gestion de projets ICT et data pour le suivi de la performance.',

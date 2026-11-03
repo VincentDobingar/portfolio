@@ -14,7 +14,7 @@ export const profile = {
   location: 'Bujumbura, Burundi — Open to relocation (Chad & Africa)',
   linkedin: 'https://linkedin.com/in/dobingarvincent',
   github: 'https://github.com/VincentDobingar',
-  cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS_EN.pdf',
+  cvUrl: '/CV_Guiryambaye_Vincent_DOBINGAR_RevenueAssurance_Fraud_EN.pdf',
   summary:
     "Revenue Assurance, fraud and data specialist with 14 years of experience in telecommunications and Mobile Money. At Millicom Tigo (Chad) I built the SQL reporting and anomaly-detection systems for Revenue Assurance and interconnection. Today at NP Holding (Burundi) I lead and build the compliance and control platforms covering Lumitel, Econet and Onatel: a multi-operator KYC system, the ITS-RAFM fraud and revenue assurance platform, and voice CDR integration at billion-row scale. PMP-certified, I cover the whole chain: requirements, data (SQL Server, Oracle, Power BI), full-stack development (React, Node.js) and executive reporting.",
 }
@@ -22,15 +22,15 @@ export const profile = {
 export const cvOptions = [
   {
     key: 'dfs',
-    label: 'Resume — Mobile Money & DFS',
-    description: 'IT operations, Mobile Money, digital financial services, KYC/AML',
-    url: '/CV_Guiryambaye_Vincent_DOBINGAR_MobileMoney_DFS_EN.pdf',
+    label: 'Resume — Revenue Assurance & Fraud',
+    description: 'Revenue Assurance, fraud detection, KYC/AML, Mobile Money / DFS',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_RevenueAssurance_Fraud_EN.pdf',
   },
   {
     key: 'finance',
-    label: 'Resume — Data Analyst & Finance',
-    description: 'Financial reporting, data reconciliation, Power BI',
-    url: '/CV_Guiryambaye_Vincent_DOBINGAR_DataAnalyst_Finance_EN.pdf',
+    label: 'Resume — Data Analyst & BI',
+    description: 'SQL, Power BI, Python, R — telecom, finance and humanitarian data',
+    url: '/CV_Guiryambaye_Vincent_DOBINGAR_DataAnalyst_BI_EN.pdf',
   },
 ]
 
@@ -310,7 +310,7 @@ export const experience = [
   {
     role: 'Partner and Technical Project Manager',
     org: 'SALY SYSTEM — Digital application development startup, Chad',
-    period: '2021 — 2023',
+    period: 'February 2021 — June 2023',
     points: [
       'Led the design and implementation of data systems and dashboards.',
       'Managed ICT and data projects for performance monitoring and reporting.',
