@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Vincent Dobingar Guiryambaye',
+  name: 'Guiryambaye Vincent DOBINGAR',
   photoUrl: '/photo-vincent.jpg',
   primaryTitle: 'Expert Mobile Money, DFS & Data Analyst',
   titles: [

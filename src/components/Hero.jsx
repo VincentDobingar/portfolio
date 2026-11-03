@@ -6,11 +6,8 @@ export default function Hero() {
   const { t, content } = useLanguage()
   const { profile, cvOptions } = content
   const [imgError, setImgError] = useState(false)
-  const initials = profile.name
-    .split(' ')
-    .map((w) => w[0])
-    .slice(0, 2)
-    .join('')
+  const nameParts = profile.name.split(' ')
+  const initials = `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`
 
   return (
     <section id="top" className="hero">
