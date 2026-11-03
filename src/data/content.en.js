@@ -128,7 +128,6 @@ export const webProjects = [
     description:
       "A KYC compliance platform unifying subscriber records from Burundi's three mobile operators into a centralized system for case management, risk assessment and regulatory audits. Cross-operator data reconciliation, rules-based risk and fraud scoring with anomaly detection, real-time compliance alerts, role-based access control (Admin, Analyst, Auditor) and complete audit trails. Bilingual FR/EN interface.",
     tags: ['React', 'Node.js', 'Express', 'SQL Server', 'JWT', 'Socket.IO', 'KYC/AML'],
-    url: 'https://github.com/VincentDobingar/kyc_Management_Project',
   },
   {
     title: 'ITS-RAFM — Revenue Assurance & Fraud Management Platform',

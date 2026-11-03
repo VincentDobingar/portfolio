@@ -128,7 +128,6 @@ export const webProjects = [
     description:
       "Plateforme de conformité KYC centralisant les données d'abonnés des trois opérateurs mobiles du Burundi pour la gestion de dossiers, l'évaluation des risques et les audits réglementaires. Réconciliation croisée entre opérateurs, scoring de risque et détection d'anomalies basés sur des règles, alertes de conformité en temps réel, contrôle d'accès par rôle (Admin, Analyste, Auditeur) et traçabilité complète des actions. Interface bilingue FR/EN.",
     tags: ['React', 'Node.js', 'Express', 'SQL Server', 'JWT', 'Socket.IO', 'KYC/AML'],
-    url: 'https://github.com/VincentDobingar/kyc_Management_Project',
   },
   {
     title: 'ITS-RAFM — Plateforme Revenue Assurance & Fraud Management',
